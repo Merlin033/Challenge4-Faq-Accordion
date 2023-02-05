@@ -20,7 +20,7 @@ The designs were created to the following widths:
 
 Background gradient:
 
-- Soft violet: hsl(273, 75%, 66%)
+- Soft violet: hsl(273, 75%, 66%) hsl(240, 73%, 65%)
 - Soft blue: hsl(240, 73%, 65%)
 
 ### Neutral
