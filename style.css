@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.88rem;
+}
+main {
+  width: 920px;
+  min-height: 510px;
+
+  background-color: white;
+  border-radius: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  padding: 63px 95px 82px 15px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-bottom: 22px;
+}
+details {
+  max-width: 100%;
+  color: hsl(240, 12%, 23%);
+  border-bottom: 0.1rem solid hsl(240, 2%, 80%);
+  min-width: 100%;
+  line-height: 2.4rem;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  position: relative;
+}
+p {
+  color: hsl(240, 1%, 64%);
+  max-width: 95%;
+  line-height: 1.1rem;
+  font-size: 0.75rem;
+  padding-bottom: 10px;
+}
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+summary:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+summary::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url(./images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 40px;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+details[open] summary {
+  font-weight: 700;
+  color: black;
+}
+.pattern {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-84%, -58%);
+}
+
+.woman {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-67%, -50%);
+  z-index: 1;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  transform: translate(-69%, -25%);
+  z-index: 2;
+}
+.illustrations {
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 1079px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-around;
+  }
+  .faq {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px 20px 20px 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .woman {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    position: relative;
+    top: -121px;
+    left: 10%;
+    transform: translate(0, 0);
+    margin: 0;
+  }
+  .illustrations {
+    overflow: visible;
+  }
+  .pattern {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    top: 70px;
+    left: 260px;
+  }
+  .box {
+    width: 0;
+  }
+  body {
+    height: 100vh;
+  }
+}
